@@ -1,4 +1,5 @@
 # Merge licenses and zip_demo, on zip; and merge the wards on ward
+import pandas as pd
 licenses_zip_ward = licenses.merge(zip_demo,on="zip") \
             			.merge(wards,on="ward")
 
