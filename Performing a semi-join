@@ -1,4 +1,5 @@
 # Merge the non_mus_tck and top_invoices tables on tid
+import pandas as pd
 tracks_invoices = non_mus_tcks.merge(top_invoices, on='tid')
 
 # Use .isin() to subset non_mus_tcsk to rows with tid in tracks_invoices
