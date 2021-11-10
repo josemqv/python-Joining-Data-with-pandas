@@ -47,4 +47,4 @@ orig_seq['diff'] = orig_seq['revenue_seq'] - orig_seq['revenue_org']
 titles_diff = orig_seq[['title_org','title_seq','diff']]
 
 # Print the first rows of the sorted titles_diff
-print(titles_diff.sort_values("diff").head())
+print(titles_diff.sort_values("diff",ascending=False).head())
